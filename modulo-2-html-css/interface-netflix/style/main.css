@@ -1,0 +1,138 @@
+/*variáveis*/
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin: 10px;
+    width: 150px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("../img/chihiro-capa.jpg");
+    
+    height:500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 5%;
+    width: 300px;
+}
+
+/*botões*/
+.botao-play {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: black;
+
+    padding: 10px 25px;
+    margin-right: 7px;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-play:hover{
+    background-color: rgb(184, 184, 184);
+    color: black;
+}
+
+.botao-play i{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.botao-info {
+    background-color: rgb(90, 90, 90);
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    padding: 10px 25px;
+    margin-right: 7px;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-info:hover{
+    background-color: rgb(63, 62, 62);
+    color: white;
+}
+
+.botao-info i{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/*carrosel*/
+section p{
+    margin: 40px 10px 10px;
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
